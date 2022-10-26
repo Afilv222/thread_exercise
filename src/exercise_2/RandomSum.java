@@ -19,8 +19,15 @@ public class RandomSum extends Thread{
 		
 		RandomGen randomGen = new RandomGen();
 		Thread a = new RandomSum(randomGen);
+		Thread b = new RandomSum(randomGen);
+		Thread c = new RandomSum(randomGen);
+		Thread d = new RandomSum(randomGen);
+		Thread e = new RandomSum(randomGen);
 		a.start();
-		
+		b.start();
+		c.start();
+		d.start();
+		e.start();
 		
 	}	
 }
